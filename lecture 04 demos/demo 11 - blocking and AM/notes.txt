@@ -1,0 +1,18 @@
+
+Blocking demos
+
+These files illustrate implementation of real-time
+processing via blocking, as applied to the amplitude
+modulation of speech.
+
+Wave file as input:
+
+wavefile_AM_noblocking.py
+wavefile_AM_blocking.py
+wavefile_AM_blocking_fix.pywavefile_AM_blocking_savewave.py
+
+Microphone as input:
+
+mic_AM_mono.py
+
+
