@@ -1,0 +1,42 @@
+
+python_pack_demo_2
+
+Documentation:
+https://docs.python.org/2/library/struct.html
+
+in python:
+
+>>> import struct
+
+>>> struct.pack('>h', 1)
+'\x00\x01'
+	# This is big-endian
+	# 'h' indicates 16 bits (2 bytes)
+	# 16 bits is 4 Hexdigits because each Hexdigit is 4 bits.
+
+>>> struct.pack('<h', 1)	
+'\x01\x00'	
+	# This is little-endian (first and second bytes are swapped) 
+
+>>> struct.pack('h', 1)
+'\x01\x00'
+	# This is native (depends on computer platform)
+
+>>> struct.pack('>hhhhh', 1, 2, 3, 4, 5)
+'\x00\x01\x00\x02\x00\x03\x00\x04\x00\x05'
+	# This is big-endian
+
+>>> struct.pack('>'+'h'*5, 1, 2, 3, 4, 5)
+'\x00\x01\x00\x02\x00\x03\x00\x04\x00\x05'
+	# '>'+'h'*5  is the same as  '>hhhhh'
+
+>>> struct.pack('<hhhhh', 1, 2, 3, 4, 5)
+'\x01\x00\x02\x00\x03\x00\x04\x00\x05\x00'
+	# This is little-endian
+
+
+
+
+
+
+

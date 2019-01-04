@@ -1,0 +1,84 @@
+
+Python notes
+
+- - - - - - - - - -
+
+In terminal on command line:
+
+python hello1.py
+
+- - - - - - - - - - 
+
+In terminal, type 'python' to open a python session.
+
+use help like this:
+
+>>> help(len)
+
+then use 'q' to exit the help and 'h' for help
+
+
+- - - - - - - - - - 
+
+To exit python in terminal:
+exit() Control-D
+
+- - - - - - - - - - 
+
+Try to run a .py file in the terminal:
+
+./hello.py 
+	(fails)
+
+./hello2.py 
+	(works)
+
+- - - - - - - - - - 
+
+For a .py file to be executable, attend to its
+(1) permissions
+(2) first line
+
+To see file permissions, in the terminal type:
+ls -l
+
+To make a .py file executable:
+
+chmod u+x hello.py
+or
+chmod a+x hello.py
+
+and make first line of .py file:
+
+#!/usr/bin/python -tt
+
+then the following can execute the file:
+
+./hello.py 
+./hello2.py 
+
+
+- - - - - - - - - - 
+
+To run a python script in Python shell:
+execfile('hello1.py')
+
+- - - - - - - - - - 
+
+To clear screen in Python shell
+CONTROL-L
+
+- - - - - - - - - - 
+
+To shorten prompt in terminal:
+
+export PS1="term: "
+
+
+- - - - - - - - - - 
+
+To try in Python:
+
+'abc' + '123'
+
+

@@ -1,0 +1,52 @@
+
+Lecture 04
+	
+-----------------------------------------------
+
+demo 09 - Circular buffer (long buffer)
+
+   - two versions: 
+
+    From Lecture 03:
+    1) buffer length = delay in samples
+    buffer uses one index
+
+    New in Lecture 04:
+    2) buffer length > delay in samples
+    buffer uses two indices
+      one index for reading, one index for writing
+    useful when delay is time-varying
+
+-----------------------------------------------
+
+demo 10 - Vibrato 
+
+Vibrato
+  - play_vibrato_simple.py
+  - time-varyring delay
+  - non-recursive 
+  - no interpolation 
+  - read wave file
+	- save to wave file, write each block to wave file...
+  - with interpolation 
+
+  - more effects: flanger, chorus, etc
+
+-----------------------------------------------
+
+demo 11 - Blocking
+ - amplitude-modulation (AM) to change voice
+ - reads wave file 
+ - three versions
+    1) no blocking (one sample at a time)
+    2) reads and writes signal values in blocks (not just one sample)
+       - transient artifacts due to inter-block discontinuity
+    2) corrected block version
+
+-----------------------------------------------
+
+demo 12 - audio plotting
+
+-----------------------------------------------
+
+
